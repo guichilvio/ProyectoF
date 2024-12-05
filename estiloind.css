@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0f10; 
+    color: #e0ffe5; 
+    background-image: url('../img/NAV1.jpg'); 
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+header {
+    background-color: rgba(14, 22, 17, 0.9); 
+    color: #a6ffae; 
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: rgba(14, 22, 17, 0.8); 
+    border: 1px solid #25a55f; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 255, 140, 0.2); 
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 255, 140, 0.4);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(50%); 
+}
+
+.card h2 {
+    font-size: 1.5em;
+    color: #a6ffae; 
+    margin: 10px 0;
+}
+
+.card p {
+    padding: 0 15px;
+    color: #b0e3b8; 
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px 0 20px;
+    padding: 10px 20px;
+    background-color: #25a55f; 
+    color: #e0ffe5;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    background-color: #35c977; 
+    box-shadow: 0 4px 8px rgba(0, 255, 140, 0.3);
+}
+
