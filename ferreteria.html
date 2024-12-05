@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería</title>
+    <link rel="stylesheet" href="estilofer.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Ferretería</h1>
+        <button onclick="location.href='index.html'">Regresar</button>
+    </header>
+
+    <div class="contenedor">
+        
+        <div class="seleccion-productos overlay">
+            <h2>Seleccione su Herramienta / Material</h2>
+            <div class="categorias">
+                <button onclick="cargarProductos('herramientas')">Herramientas</button>
+                <button onclick="cargarProductos('materiales')">Materiales</button>
+            </div>
+            <div id="productos-grid" class="productos-grid">
+                
+            </div>
+        </div>
+        <div class="ticket-compra overlay">
+            <h2>¿Qué deseas comprar?</h2>
+            
+            <div class="opciones-compra">
+                <div id="detalle-producto" class="detalle-producto">
+                </div>
+                <label for="producto-tamano">Tamaño:</label>
+                <select id="producto-tamano">
+                    <option value="chico">Chico</option>
+                    <option value="mediano">Mediano</option>
+                    <option value="grande">Grande</option>
+                </select>
+
+                <label for="producto-cantidad">Cantidad:</label>
+                <input type="number" id="producto-cantidad" min="1" value="1">
+
+                <button onclick="agregarAlTicket()">Agregar al Ticket</button>
+            </div>
+            
+            <h3>Ticket de compra</h3>
+            <div id="ticket" class="ticket">
+                
+            </div>
+            
+            <button onclick="comprar()">Comprar</button>
+            <button onclick="limpiarTicket()">Borrar</button>
+        </div>
+
+
+    </div>
+
+    <script src="fer.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Frutas y Verduras</title>
+    <link rel="stylesheet" href="estilover.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="productos">
+            <h2>SELECCIONE SU FRUTA / VERDURA</h2>
+            <div id="productos-grid" class="grid">
+                
+            </div>
+        </div>
+
+        <div class="compra">
+            <h2>¿QUÉ QUIERES COMPRAR HOY?</h2>
+            <label><input type="radio" name="categoria" id="frutas" onclick="cargarProductos('frutas')"> Frutas</label>
+            <label><input type="radio" name="categoria" id="verduras" onclick="cargarProductos('verduras')"> Verduras</label>
+
+            <div>
+                <input type="text" id="familia" placeholder="Familia del producto" readonly>
+                <input type="text" id="tipo" placeholder="Tipo de producto (origen)" readonly>
+            </div>
+
+            <div>
+                <label><input type="radio" name="cantidad" value="unidad" id="unidad" required> Unidad</label>
+                <label><input type="radio" name="cantidad" value="kilo" id="kilo" required> Kilo</label>
+            </div>
+
+            <button onclick="comprar()">Comprar</button>
+            <br>
+            <br>
+            <div>
+                <h3>Ticket de compra</h3>
+                <div id="ticket"></div>
+                <button onclick="borrar()">Borrar</button>
+                <button onclick="modificarTicket()">Modificar</button>
+
+            </div>
+            <br>
+            <br>
+
+            <div class="salir">
+                <h3>Regresar al menu</h3>
+                <button onclick="location.href='index.html'">Regresar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="ver.js"></script>
+</body>
+</html>
