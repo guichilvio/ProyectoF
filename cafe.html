@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Internet</title>
+    <link rel="stylesheet" href="estilocaf.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Café Internet</h1>
+        <button onclick="location.href='index.html'">Regresar</button>
+    </header>
+
+    <div class="contenedor">
+        
+        <div class="registro-usuario overlay">
+            <h2>Registro de Usuario</h2>
+            <label for="numero-computadora">Número de Computadora:</label>
+            <input type="number" id="numero-computadora" min="1">
+            
+            <label for="ip-computadora">Dirección IP:</label>
+            <input type="text" id="ip-computadora" readonly>
+            
+            <label for="nombre-usuario">Nombre de Usuario:</label>
+            <input type="text" id="nombre-usuario">
+
+            <button onclick="iniciarSesion()">Iniciar Sesión</button>
+        </div>
+
+      
+        <div class="ticket-uso overlay">
+            <h2>Tiempo de Uso</h2>
+            
+            <div id="contador-tiempo" class="contador-tiempo">
+                
+                <p><strong>Tiempo: </strong><span id="tiempo-uso">0:00:00</span></p>
+                <p><strong>Costo Actual: </strong>$<span id="costo-actual">0.00</span></p>
+    
+            </div>
+
+            <h3>Ticket de Uso</h3>
+            <div id="ticket" class="ticket">
+                
+            </div>
+            
+          
+            <button onclick="limpiarTicket()">Borrar</button>
+        </div>
+    </div>
+
+    <script src="caf.js"></script>
+</body>
+</html>
