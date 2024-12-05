@@ -4,22 +4,22 @@ let productosSeleccionados = [];
 
 
 const productosHerramientas = [
-    { nombre: 'Martillo', origen: 'China', familia: 'Herramientas de Mano', costoUnidad: 5.0, descripcion: 'Martillo de acero', imagen: '/img/martillo.png' },
-    { nombre: 'Destornillador', origen: 'India', familia: 'Herramientas de Mano', costoUnidad: 2.5, descripcion: 'Destornillador Phillips', imagen: '/img/destornillador.png' },
-    { nombre: 'Llave Inglesa', origen: 'Japón', familia: 'Herramientas de Mano', costoUnidad: 4.0, descripcion: 'Llave inglesa ', imagen: '/img/llave.png' },
-    { nombre: 'Sierra', origen: 'Alemania', familia: 'Herramientas de Corte', costoUnidad: 6.5, descripcion: 'Sierra de mano', imagen: '/img/sierra.png' },
-    { nombre: 'Taladro', origen: 'EEUU', familia: 'Herramientas Eléctricas', costoUnidad: 50.0, descripcion: 'Taladro eléctrico', imagen: '/img/tal.png' },
-    { nombre: 'Caja de Herramientas', origen: 'China', familia: 'Accesorios', costoUnidad: 20.0, descripcion: 'Caja de herramientas portátil', imagen: '/img/caja.png' },
+    { nombre: 'Martillo', origen: 'China', familia: 'Herramientas de Mano', costoUnidad: 5.0, descripcion: 'Martillo de acero', imagen: 'martillo.png' },
+    { nombre: 'Destornillador', origen: 'India', familia: 'Herramientas de Mano', costoUnidad: 2.5, descripcion: 'Destornillador Phillips', imagen: 'destornillador.png' },
+    { nombre: 'Llave Inglesa', origen: 'Japón', familia: 'Herramientas de Mano', costoUnidad: 4.0, descripcion: 'Llave inglesa ', imagen: 'llave.png' },
+    { nombre: 'Sierra', origen: 'Alemania', familia: 'Herramientas de Corte', costoUnidad: 6.5, descripcion: 'Sierra de mano', imagen: 'sierra.png' },
+    { nombre: 'Taladro', origen: 'EEUU', familia: 'Herramientas Eléctricas', costoUnidad: 50.0, descripcion: 'Taladro eléctrico', imagen: 'tal.png' },
+    { nombre: 'Caja de Herramientas', origen: 'China', familia: 'Accesorios', costoUnidad: 20.0, descripcion: 'Caja de herramientas portátil', imagen: 'caja.png' },
 ];
 
 
 const productosMateriales = [
-    { nombre: 'Clavos', origen: 'México', familia: 'Materiales', costoUnidad: 3.0, descripcion: 'Paquete de clavos', imagen: '/img/clavo.png' },
-    { nombre: 'Tornillos', origen: 'España', familia: 'Materiales', costoUnidad: 4.0, descripcion: 'Paquete de tornillos', imagen: '/img/tornillo.png' },
-    { nombre: 'Pintura', origen: 'Italia', familia: 'Materiales', costoUnidad: 15.0, descripcion: 'Pintura acrílica', imagen: '/img/pintura.png' },
-    { nombre: 'Pegamento', origen: 'EEUU', familia: 'Materiales', costoUnidad: 2.0, descripcion: 'Pegamento instantáneo', imagen: '/img/pegamento.png' },
-    { nombre: 'Madera', origen: 'Canadá', familia: 'Materiales', costoUnidad: 20.0, descripcion: 'Tablones de madera', imagen: '/img/tabla.png' },
-    { nombre: 'Tubería de PVC', origen: 'Colombia', familia: 'Materiales', costoUnidad: 10.0, descripcion: 'Tubería de PVC ', imagen: '/img/tuberias.png' },
+    { nombre: 'Clavos', origen: 'México', familia: 'Materiales', costoUnidad: 3.0, descripcion: 'Paquete de clavos', imagen: 'clavo.png' },
+    { nombre: 'Tornillos', origen: 'España', familia: 'Materiales', costoUnidad: 4.0, descripcion: 'Paquete de tornillos', imagen: 'tornillo.png' },
+    { nombre: 'Pintura', origen: 'Italia', familia: 'Materiales', costoUnidad: 15.0, descripcion: 'Pintura acrílica', imagen: 'pintura.png' },
+    { nombre: 'Pegamento', origen: 'EEUU', familia: 'Materiales', costoUnidad: 2.0, descripcion: 'Pegamento instantáneo', imagen: 'pegamento.png' },
+    { nombre: 'Madera', origen: 'Canadá', familia: 'Materiales', costoUnidad: 20.0, descripcion: 'Tablones de madera', imagen: 'tabla.png' },
+    { nombre: 'Tubería de PVC', origen: 'Colombia', familia: 'Materiales', costoUnidad: 10.0, descripcion: 'Tubería de PVC ', imagen: 'tuberias.png' },
 ];
 
 
