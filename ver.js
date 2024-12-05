@@ -5,28 +5,28 @@ function calcularPrecioKilo(costoUnidad) {
 
 
 const productosFrutas = [
-    { nombre: 'Manzana', origen: 'Árbol', familia: 'Rosáceas', costoUnidad: 1.5, precioKilo: calcularPrecioKilo(1.5), descripcion: 'Manzana Roja', imagen: '/img/manzana.png' },
-    { nombre: 'Plátano', origen: 'Planta', familia: 'Musáceas', costoUnidad: 1.4, precioKilo: calcularPrecioKilo(1.4), descripcion: 'Plátano Maduro', imagen: '/img/platanos.png' },
-    { nombre: 'Naranja', origen: 'Árbol', familia: 'Rutáceas', costoUnidad: 1.0, precioKilo: calcularPrecioKilo(1.0), descripcion: 'Naranja de Mesa', imagen: '/img/naranja.png' },
-    { nombre: 'Fresa', origen: 'Planta', familia: 'Rosáceas', costoUnidad: 2.0, precioKilo: calcularPrecioKilo(2.0), descripcion: 'Fresa Fresca', imagen: '/img/fresa.png' },
-    { nombre: 'Mango', origen: 'Árbol', familia: 'Anacardiáceas', costoUnidad: 1.8, precioKilo: calcularPrecioKilo(1.8), descripcion: 'Mango Dulce', imagen: '/img/mango.png' },
-    { nombre: 'Piña', origen: 'Planta', familia: 'Bromeliáceas', costoUnidad: 2.2, precioKilo: calcularPrecioKilo(2.2), descripcion: 'Piña Tropical', imagen: '/img/pina.png' },
-    { nombre: 'Uva', origen: 'Planta', familia: 'Vitáceas', costoUnidad: 2.5, precioKilo: calcularPrecioKilo(2.5), descripcion: 'Uva Verde', imagen: '/img/uva.png' },
-    { nombre: 'Papaya', origen: 'Planta', familia: 'Caricáceas', costoUnidad: 1.6, precioKilo: calcularPrecioKilo(1.6), descripcion: 'Papaya Tropical', imagen: '/img/papaya.png' },
-    { nombre: 'Sandía', origen: 'Planta', familia: 'Cucurbitáceas', costoUnidad: 1.2, precioKilo: calcularPrecioKilo(1.2), descripcion: 'Sandía Fresca', imagen: '/img/sandia.png' },
-    { nombre: 'Cereza', origen: 'Árbol', familia: 'Rosáceas', costoUnidad: 3.0, precioKilo: calcularPrecioKilo(3.0), descripcion: 'Cereza Roja', imagen: '/img/cerezas.png' },
-    { nombre: 'Melón', origen: 'Planta', familia: 'Cucurbitáceas', costoUnidad: 1.5, precioKilo: calcularPrecioKilo(1.5), descripcion: 'Melón Dulce', imagen: '/img/melon.png' },
-    { nombre: 'Durazno', origen: 'Árbol', familia: 'Rosáceas', costoUnidad: 1.7, precioKilo: calcularPrecioKilo(1.7), descripcion: 'Durazno Jugoso', imagen: '/img/melocoton.png' },
+    { nombre: 'Manzana', origen: 'Árbol', familia: 'Rosáceas', costoUnidad: 1.5, precioKilo: calcularPrecioKilo(1.5), descripcion: 'Manzana Roja', imagen: 'manzana.png' },
+    { nombre: 'Plátano', origen: 'Planta', familia: 'Musáceas', costoUnidad: 1.4, precioKilo: calcularPrecioKilo(1.4), descripcion: 'Plátano Maduro', imagen: 'platanos.png' },
+    { nombre: 'Naranja', origen: 'Árbol', familia: 'Rutáceas', costoUnidad: 1.0, precioKilo: calcularPrecioKilo(1.0), descripcion: 'Naranja de Mesa', imagen: 'naranja.png' },
+    { nombre: 'Fresa', origen: 'Planta', familia: 'Rosáceas', costoUnidad: 2.0, precioKilo: calcularPrecioKilo(2.0), descripcion: 'Fresa Fresca', imagen: 'fresa.png' },
+    { nombre: 'Mango', origen: 'Árbol', familia: 'Anacardiáceas', costoUnidad: 1.8, precioKilo: calcularPrecioKilo(1.8), descripcion: 'Mango Dulce', imagen: 'mango.png' },
+    { nombre: 'Piña', origen: 'Planta', familia: 'Bromeliáceas', costoUnidad: 2.2, precioKilo: calcularPrecioKilo(2.2), descripcion: 'Piña Tropical', imagen: 'pina.png' },
+    { nombre: 'Uva', origen: 'Planta', familia: 'Vitáceas', costoUnidad: 2.5, precioKilo: calcularPrecioKilo(2.5), descripcion: 'Uva Verde', imagen: 'uva.png' },
+    { nombre: 'Papaya', origen: 'Planta', familia: 'Caricáceas', costoUnidad: 1.6, precioKilo: calcularPrecioKilo(1.6), descripcion: 'Papaya Tropical', imagen: 'papaya.png' },
+    { nombre: 'Sandía', origen: 'Planta', familia: 'Cucurbitáceas', costoUnidad: 1.2, precioKilo: calcularPrecioKilo(1.2), descripcion: 'Sandía Fresca', imagen: 'sandia.png' },
+    { nombre: 'Cereza', origen: 'Árbol', familia: 'Rosáceas', costoUnidad: 3.0, precioKilo: calcularPrecioKilo(3.0), descripcion: 'Cereza Roja', imagen: 'cerezas.png' },
+    { nombre: 'Melón', origen: 'Planta', familia: 'Cucurbitáceas', costoUnidad: 1.5, precioKilo: calcularPrecioKilo(1.5), descripcion: 'Melón Dulce', imagen: 'melon.png' },
+    { nombre: 'Durazno', origen: 'Árbol', familia: 'Rosáceas', costoUnidad: 1.7, precioKilo: calcularPrecioKilo(1.7), descripcion: 'Durazno Jugoso', imagen: 'melocoton.png' },
 ];
 
 
 const productosVerduras = [
-    { nombre: 'Pepino', origen: 'Planta', familia: 'Cucurbitáceas', costoUnidad: 0.9, precioKilo: calcularPrecioKilo(0.9), descripcion: 'Pepino Verde', imagen: '/img/pepino.png' },
-    { nombre: 'Tomate', origen: 'Planta', familia: 'Solanáceas', costoUnidad: 1.2, precioKilo: calcularPrecioKilo(1.2), descripcion: 'Tomate Rojo', imagen: '/img/tomate.png' },
-    { nombre: 'Zanahoria', origen: 'Tierra', familia: 'Apiáceas', costoUnidad: 1.0, precioKilo: calcularPrecioKilo(1.0), descripcion: 'Zanahoria Fresca', imagen: '/img/zanahoria.png' },
-    { nombre: 'Pimiento', origen: 'Planta', familia: 'Solanáceas', costoUnidad: 1.3, precioKilo: calcularPrecioKilo(1.3), descripcion: 'Pimiento Rojo', imagen: '/img/pimiento-rojo.png' },
-    { nombre: 'Calabacín', origen: 'Planta', familia: 'Cucurbitáceas', costoUnidad: 1.1, precioKilo: calcularPrecioKilo(1.1), descripcion: 'Calabacín Fresco', imagen: '/img/calabacin.png' },
-    { nombre: 'Brócoli', origen: 'Planta', familia: 'Brassicáceas', costoUnidad: 1.5, precioKilo: calcularPrecioKilo(1.5), descripcion: 'Brócoli Fresco', imagen: '/img/brocoli.png' },
+    { nombre: 'Pepino', origen: 'Planta', familia: 'Cucurbitáceas', costoUnidad: 0.9, precioKilo: calcularPrecioKilo(0.9), descripcion: 'Pepino Verde', imagen: 'pepino.png' },
+    { nombre: 'Tomate', origen: 'Planta', familia: 'Solanáceas', costoUnidad: 1.2, precioKilo: calcularPrecioKilo(1.2), descripcion: 'Tomate Rojo', imagen: 'tomate.png' },
+    { nombre: 'Zanahoria', origen: 'Tierra', familia: 'Apiáceas', costoUnidad: 1.0, precioKilo: calcularPrecioKilo(1.0), descripcion: 'Zanahoria Fresca', imagen: 'zanahoria.png' },
+    { nombre: 'Pimiento', origen: 'Planta', familia: 'Solanáceas', costoUnidad: 1.3, precioKilo: calcularPrecioKilo(1.3), descripcion: 'Pimiento Rojo', imagen: 'pimiento-rojo.png' },
+    { nombre: 'Calabacín', origen: 'Planta', familia: 'Cucurbitáceas', costoUnidad: 1.1, precioKilo: calcularPrecioKilo(1.1), descripcion: 'Calabacín Fresco', imagen: 'calabacin.png' },
+    { nombre: 'Brócoli', origen: 'Planta', familia: 'Brassicáceas', costoUnidad: 1.5, precioKilo: calcularPrecioKilo(1.5), descripcion: 'Brócoli Fresco', imagen: 'brocoli.png' },
    
 ];
 
